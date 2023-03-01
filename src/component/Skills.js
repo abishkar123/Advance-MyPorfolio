@@ -52,6 +52,7 @@ export const Skills = () => {
                                 <span class="skills__percentage">65%</span>
                             </div>
                         </div>
+
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxs-paint skills__icon text-success'></i>
@@ -78,6 +79,7 @@ export const Skills = () => {
                             </div>
                         </div>
 
+                       
                         <div class="skills__data">
                             <div class="skills__names">
                             <i class="fa-brands fa-figma skills__icon text-secondary"></i>

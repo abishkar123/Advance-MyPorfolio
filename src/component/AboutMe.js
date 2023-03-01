@@ -23,7 +23,7 @@ export const AboutMe = () => {
       
     <li><span class="p1">Name: </span><span class="tColor">Abishkar Rai</span></li>
     <li><span class="p1">Experience: </span><span class="tColor">Under one Year</span></li>
-    <li><span class="p1">Residence: </span><span class="tColor">Sydney, Hursville</span></li>
+    <li><span class="p1">Residence: </span><span class="tColor">Sydney, Hurstville</span></li>
     </ul>
     </Col>
 </Row>

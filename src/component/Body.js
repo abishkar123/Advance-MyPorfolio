@@ -1,16 +1,33 @@
 import React from 'react'
 import my from "../asests/my.png";
 import { Layout } from './Layout';
+import { TypeAnimation } from 'react-type-animation';
+import CV from '../asests/resume.pdf'
 
 export const Body = () => {
+
   return (
     <Layout>
     <div>
         <section class="home bd-grid" id="home">
                 
                 <div className="col-md-6 mt-3 pb-3">
-                Hi i'm 
-                <div className="fs-1 fw-bolder mb-2"> <span class="home__title-color">Abishkar Rai </span></div>
+                <h3> Hi i'm </h3>
+                <div className="fs-1 fw-bolder mb-2"> <span class="">Abishkar Rai </span></div>
+               
+                <TypeAnimation
+                className='fs-1 fw-bolder mb-2 home__title-color'
+                sequence={[
+                  'Full Stack Developer', 1000, 'Front-end Developer', 2000, 'Full Stack Developer|Front-end Develper', ()=>{
+                    console.log('Abishkar rai')
+                  }
+                ]}
+                wrapper="dev"
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: '3em' }}
+                />
+               
                 <div>
                   <a href="https://www.linkedin.com/in/abishkar-rai/">
                 <i className="fa-brands fa-linkedin text-danger"></i> </a>
@@ -19,7 +36,7 @@ export const Body = () => {
                 </div>
     
                 <p>I am recently finished my BIT Program and i am currenly doing job ready program at dented code and i have Problem solving nature.</p>
-                <a href="asests/resume.pdf"download className='btn btn-danger'>Download Resume</a>
+                <a href={CV} download className='btn btn-danger'>Download Resume</a>
             {/* <Button className="btn btn-danger">Download Resume</Button> */}
             </div>
     
